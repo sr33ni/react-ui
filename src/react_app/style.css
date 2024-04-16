@@ -1,0 +1,192 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  text-size-adjust: none;
+  word-break: break-word;
+  font-family: "Trebuchet MS", sans-serif;
+}
+body a[href] {
+  color: #723544;
+}
+body h1 {
+  font-size: 32px;
+  margin: 0 0 20px 0;
+}
+body p {
+  margin: 0 0 10px 0;
+}
+
+.anchor_section {
+  background-color: #2B77A4;
+  height: 100vh;
+  display: flex;
+  text-align: center;
+}
+.anchor_section > ul {
+  width: 20%;
+  background-color: #2B77A4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  padding: 50px 0px;
+}
+.anchor_section > ul > li {
+  padding: 15px 20px;
+  list-style: none;
+  width: 75%;
+  cursor: pointer;
+  color: #F4F1EB;
+  font-weight: 600;
+}
+.anchor_section > ul > li.active {
+  background-color: #F4F1EB;
+  border-radius: 2.25rem 0 0 2.25rem;
+  position: relative;
+  color: #2B77A4;
+}
+.anchor_section > ul > li.active:after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: -15px;
+  background-color: #2B77A4;
+  border-radius: 0 0 50%;
+  box-shadow: 5px 5px 0px 0px #F4F1EB;
+}
+.anchor_section > ul > li.active:before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  bottom: -15px;
+  background-color: #2B77A4;
+  border-radius: 0% 50% 0% 0%;
+  box-shadow: 5px -5px 0px 0px #F4F1EB;
+}
+.anchor_section > div {
+  width: 80%;
+  display: none;
+  padding: 30px;
+  text-align: left;
+  background-color: #F4F1EB;
+  border-radius: 10px 10px 0px 10px;
+}
+.anchor_section.active_home_tab > div.home_detail_tab {
+  display: block;
+}
+.anchor_section.active_about_tab div.about_detail_tab {
+  display: block;
+}
+.anchor_section.active_contact_tab div.contact_detail_tab {
+  display: block;
+}
+
+.header-section {
+  background-color: #2B77A4;
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+}
+.header-section .logo-container {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  width: 20%;
+  justify-content: center;
+}
+.header-section .logo-container .img-container {
+  width: 40px;
+  height: 40px;
+  background-color: #F4F1EB;
+  padding: 10px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-section .logo-container .img-container img {
+  max-width: 100%;
+}
+.header-section .logo-container .logo-name {
+  font-size: 24px;
+  color: #F4F1EB;
+}
+
+.detail_tab {
+  border-radius: 16px;
+  background-color: #E2D8C6;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 15px;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.detail_tab .detail_tab_sec {
+  min-height: 100px;
+  min-width: 100px;
+  border-radius: 16px;
+  display: flex;
+}
+.detail_tab .detail_tab_sec.sec-header {
+  width: 100%;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+  padding: 5px;
+  background-color: #2B77A4;
+  gap: 10px;
+}
+.detail_tab .detail_tab_sec.sec-header .sec-header-bubble {
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  border-radius: 16px;
+  padding: 5px 10px;
+  width: 100%;
+  transition: scale 500ms;
+  color: #F4F1EB;
+  cursor: pointer;
+}
+.detail_tab .detail_tab_sec.sec-header .sec-header-bubble:has(+ .sec-header-bubble:hover) {
+  scale: 1.02;
+}
+.detail_tab .detail_tab_sec.sec-header .sec-header-bubble:hover {
+  scale: 1.03;
+  z-index: 2;
+  background-color: #F4F1EB;
+  color: #2B77A4;
+}
+.detail_tab .detail_tab_sec.sec-header .sec-header-bubble:hover + .sec-header-bubble {
+  scale: 1.02;
+}
+.detail_tab .detail_tab_sec.sec-one {
+  background-color: #F4F1EB;
+  width: calc(50% - 40px);
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.detail_tab .detail_tab_sec.sec-two {
+  background-color: #F4F1EB;
+  width: calc(50% - 12px);
+  padding: 10px;
+}
+.detail_tab .detail_tab_sec.sub_sec-one {
+  width: -webkit-fill-available;
+  background-color: #E2D8C6;
+}
+.detail_tab .detail_tab_sec.sub_sec-two {
+  width: -webkit-fill-available;
+  background-color: #E2D8C6;
+}/*# sourceMappingURL=style.css.map */

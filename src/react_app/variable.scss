@@ -1,0 +1,53 @@
+
+  $primary:  #F4F1EB;
+  $secondary: #2B77A4;
+  $primary-one: #E2D8C6;
+  $secondary-one : #723544;
+  $success : #77a42b;
+
+//  $color-palette-min: (
+//     "primary": #EDE1D2,
+//     "secondary": #CBB89D,
+//    "success": #6A6F4C,
+//    "info": #412F26,
+//    "warning": #806044,
+//    "danger": #5D2510,
+//    "default-black":#000,
+//    "default-white":#fff
+//  );
+
+//  $color-palette-deep: (
+//     "primary": #ffc107,
+//     "secondary": #FAE3CF,
+//     "success": #28a745,
+//     "info": #17a2b8,
+//     "warning": #FA8603,
+//     "danger": #BB2233,
+//     "default-black":#000,
+//     "default-white":#000
+//   );
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    text-size-adjust: none;
+    word-break: break-word;
+    font-family: 'Trebuchet MS', sans-serif;
+    a[href]{
+        color: $secondary-one;
+    }
+    h1{
+      font-size: 32px;
+      margin: 0 0 20px 0;
+      &:hover{
+        
+      }
+    }
+    p{
+      margin: 0 0 10px 0;
+    }
+}
+
