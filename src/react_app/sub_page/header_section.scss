@@ -27,4 +27,21 @@
             color: $primary;
         }
     }
+    .search-container{
+        margin-left: auto;
+        width: 30%;
+        position: relative;
+        input{
+            height: 40px;
+            width: 90%;
+            border-radius: 100vw;
+            padding: 0 20px;
+            border: 0;
+            background-size: 25px;
+            background-repeat: no-repeat;
+            padding-left: 43px;
+            background-position: 3% 50%;
+            font-size: $fnt-sz-16px;
+        }
+    }
 }

@@ -4,6 +4,9 @@
   $primary-one: #E2D8C6;
   $secondary-one : #723544;
   $success : #77a42b;
+  $orange :#cf3b17;
+
+  $fnt-sz-16px: 1rem;
 
 //  $color-palette-min: (
 //     "primary": #EDE1D2,
@@ -26,6 +29,10 @@
 //     "default-black":#000,
 //     "default-white":#000
 //   );
+@font-face {
+  font-family: 'Market_Deco';
+  src: local('Market_Deco') url("") format("truetype");;
+} 
 body{
     box-sizing: border-box;
     margin: 0;
@@ -48,6 +55,9 @@ body{
     }
     p{
       margin: 0 0 10px 0;
+    }
+    input:focus-visible{
+      outline-color: $secondary !important;
     }
 }
 
