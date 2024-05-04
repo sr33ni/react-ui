@@ -1,0 +1,106 @@
+
+import React, { Component } from "react"; 
+// Importing classNames  
+import classNames from 'classnames'
+class Class_change extends Component { 
+  state = { 
+    flag : true
+  } 
+    
+  handleUpdate = () => { 
+    this.setState({flag: !this.state.flag}) 
+} 
+  
+  render() { 
+   // Using classNames to add and remove 
+   // Classes based on state  
+    var classes = classNames( { 
+      'btn': true, 
+      'btn-primary': this.state.flag === true, 
+      'btn-success':this.state.flag===false
+    }) 
+      
+        return ( 
+            <div> 
+               <button type="button" 
+               className= { classes} 
+               onClick = {this.handleUpdate}> 
+              Click to add and remove classes  
+                </button>   
+            </div> 
+        ); 
+  } 
+} 
+export default Class_change;
+
+
+
+
+import React, {state , useState , Component} from 'react';
+import Home_page from './sub_page/home_page';
+import About_page from './sub_page/about_page';
+import './style.css'
+import Contact_page from './sub_page/contact_page';
+import Header_section from './sub_page/header_section';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+class Anchor_page extends React.Component{
+  constructor(props) {
+    super(props);
+    this.state = {
+      ishomeClassActive: true,
+      isaboutClassActive: false,
+      iscontactClassActive: false,
+
+      isTabActive: "anchor_section active_home_tab",
+      
+  };
+  }
+  hometoggleClass = () => {
+    this.setState({
+      ishomeClassActive: !this.state.ishomeClassActive,
+      isaboutClassActive: false,
+      iscontactClassActive: false,
+      isTabActive: "anchor_section active_home_tab",
+    });
+};
+abouttoggleClass = () => {
+  this.setState({
+      isaboutClassActive: !this.state.isaboutClassActive,
+      ishomeClassActive: false,
+      iscontactClassActive: false,
+      isTabActive: " anchor_section active_about_tab",
+  });
+};
+contacttoggleClass = () => {
+  this.setState({
+    iscontactClassActive: !this.state.iscontactClassActive,
+    isaboutClassActive: false,
+    ishomeClassActive: false,
+    isTabActive: "anchor_section active_contact_tab",
+  });
+};
+
+  render(){
+    return(
+        <div>
+          <Header_section />
+          <BrowserRouter>
+          <Routes>
+
+            <section className={this.state.isTabActive }>
+                <ul>
+                  <li className={this.state.ishomeClassActive ? "active" : ""} onClick={this.hometoggleClass}><a>Home</a></li>
+                  <li className={this.state.isaboutClassActive ? "active" : ""} onClick={this.abouttoggleClass}><a>About</a></li>
+                  <li className={this.state.iscontactClassActive ? "active" : ""} onClick={this.contacttoggleClass}><a>Contact Us</a></li>
+                </ul>
+                <Route index element={<Home_page />} />
+                <Route path="aboutus" element={<About_page />} />
+                <Route path="contact" element={<Contact_page />} />
+            </section>
+            </Routes>
+            </BrowserRouter>
+        </div>
+    );
+  }
+}
+export default Anchor_page;
