@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d8b598fa.css",
+    "main.js": "/static/js/main.8723a229.js",
+    "static/js/453.8f1e8357.chunk.js": "/static/js/453.8f1e8357.chunk.js",
+    "static/media/logo-frog.svg": "/static/media/logo-frog.0a22eb7d40d6147b43f5b7c92ec394b3.svg",
+    "index.html": "/index.html",
+    "static/media/magnifying-glass-solid.svg": "/static/media/magnifying-glass-solid.9086ba6d4c9476997bf6c1f1264a5f6d.svg",
+    "main.d8b598fa.css.map": "/static/css/main.d8b598fa.css.map",
+    "main.8723a229.js.map": "/static/js/main.8723a229.js.map",
+    "453.8f1e8357.chunk.js.map": "/static/js/453.8f1e8357.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d8b598fa.css",
+    "static/js/main.8723a229.js"
+  ]
+}
