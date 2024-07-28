@@ -9,6 +9,9 @@
         align-items: center;
         width: 20%;
         justify-content: center;
+        @media (max-width: 768.68px) {
+            width: fit-content;
+            }
     .img-container{
         width: 40px;
         height: 40px;
