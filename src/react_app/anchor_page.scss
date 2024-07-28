@@ -2,9 +2,13 @@
 
 .anchor_section{
     background-color: $secondary;
-    height: 100vh;
+    height: calc(100svh - 80px);
     display: flex;
     text-align: center;
+    @media (max-width: 768.68px) {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
     // > ul{
     //     width: 20%;
     //     background-color:  $secondary;
@@ -60,14 +64,22 @@
     //     }
     // }
     >.nav-bar{
-        width: 20%;
-        background-color:  $secondary;
+        width: 15%;
+        background-color: $secondary;
         margin: 0;
         padding: 0;
         display: flex;
         align-items: flex-end;
         flex-direction: column;
         padding: 50px 0px;
+        @media (max-width: 768.68px) {
+            position: relative;
+            z-index: 2;
+            flex-direction: row;
+            width:96%;
+            // background-color: $primary;
+            padding: 15px 0px;
+        }
         > a{
             padding: 15px 20px;
             list-style: none;
@@ -76,11 +88,63 @@
             color: $primary;
             font-weight: 600;
             text-decoration: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            @media (max-width: 768.68px) {
+                width: -webkit-fill-available;
+                height: 50px;
+                justify-content: center;
+                padding: 15px 9px;
+                }
+            span{
+                @media (max-width: 768.68px) {
+                    display: none;
+                }
+                &.span-icon{
+                    display: block;
+                    // background-position: 50% 50%;
+                    // background-size: 25px;
+                    // background-repeat: no-repeat;
+                    // background-origin: padding-box;
+                    padding: 25px 0 0 25px;
+                    mask-repeat: no-repeat;
+                    -webkit-mask-repeat: no-repeat;
+                    background-color: $secondary;
+                    @media (max-width: 768.68px) {
+                        // background-position: 50% 50%;
+                        // background-repeat: no-repeat;
+                        // background-origin: padding-box;
+                        padding: 20px;
+                        background-color: $primary;
+                    }
+                }
+            }
             &.active{
                 background-color: $primary;
                 border-radius: 2.25rem 0 0 2.25rem;
                 position: relative;
                 color: $secondary;
+                @media (max-width: 768.68px) {
+                    border-radius: 10px;
+                }
+                span{
+                    &.span-icon{
+                        @media (max-width: 768.68px) {
+                            border-radius: 5px;
+                            animation: active-animation 0.5s;
+                            background-color: $secondary;
+                            @keyframes active-animation{
+                                0%{
+                                    padding: 20px 20px;
+                                }
+                                100%{
+                                    padding: 30px 20px;
+                                }
+                            }
+                        }
+                    }
+                }
                 &:after{
                     content: '';
                     width: 15px;
@@ -111,16 +175,40 @@
                     box-shadow: 5px -5px 0px 0px  $primary;
                 
                 }
+                @media (max-width: 768.68px) {
+                    &:after{display: none;}
+                    &:before{display: none;}
+
+                }
             }
         }
     }
     > div{
-        width: 80%;
+        width: 85%;
         // display: none;
         padding: 30px;
         text-align: left;
         background-color: $primary;
-        border-radius: 10px 10px 0px 10px;
+        border-radius: 10px 10px 10px 10px;
+        margin: 0px 10px 10px 0px;
+        &:last-of-type{
+            margin: 10px 0;
+            height: calc(100vh - 150px);
+            @media (max-width: 768.68px) {
+            animation: active-tab-animation 0.9s;
+            position: relative;
+            z-index: 1;
+            width: 80%;
+            @keyframes active-tab-animation{
+                0%{
+                    bottom: -100%;
+                }
+                100%{
+                    bottom: 0;
+                }
+            }
+            }
+        }
     }
     &.active_home_tab > {
         div{
@@ -176,3 +264,10 @@
     }
 }
 // main nav page style end
+
+// login page - start
+.login-container{
+    
+}
+
+// login page - end
