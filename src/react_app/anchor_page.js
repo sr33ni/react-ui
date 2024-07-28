@@ -24,14 +24,14 @@ class Anchor_page extends React.Component{
       createRoutesFromElements(
         <Route path='/' element={<Main_nav />}>
 
-        <Route exact path="/" element={<Home_page />} />
-        <Route exact path="/grid" element={<Grid_page />} />
-        <Route exact path="contact" element={<Contact_page />}> 
-        <Route exact path="faq" element={<Faq_page />} /> 
-        <Route exact path="moreinfo" element={<Info_page />} /> 
+        <Route exact path="react-ui/" element={<Home_page />} />
+        <Route exact path="react-ui//grid" element={<Grid_page />} />
+        <Route exact path="react-ui/contact" element={<Contact_page />}> 
+        <Route exact path="react-ui/faq" element={<Faq_page />} /> 
+        <Route exact path="react-ui/moreinfo" element={<Info_page />} /> 
         </Route> 
-        <Route exact path="*" element={<Page_404 />} /> 
-        <Route exact path="login" element={<Login_page />} /> 
+        <Route exact path="react-ui/*" element={<Page_404 />} /> 
+        <Route exact path="react-ui/login" element={<Login_page />} /> 
                   
         </Route> 
       )
