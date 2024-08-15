@@ -41,7 +41,8 @@ body input:focus-visible {
   }
 }
 .anchor_section > .nav-bar {
-  width: 15%;
+  flex: 0 1 250px;
+  min-width: 250px;
   background-color: #2B77A4;
   margin: 0;
   padding: 0;
@@ -163,12 +164,12 @@ body input:focus-visible {
   border-radius: 10px 10px 10px 10px;
   margin: 0px 10px 10px 0px;
 }
-.anchor_section > div:last-of-type {
+.anchor_section > div:not(.nav-bar):last-of-type {
   margin: 10px 0;
   height: calc(100vh - 150px);
 }
 @media (max-width: 768.68px) {
-  .anchor_section > div:last-of-type {
+  .anchor_section > div:not(.nav-bar):last-of-type {
     animation: active-tab-animation 0.9s;
     position: relative;
     z-index: 1;
@@ -511,8 +512,4 @@ body .page_404_detail_tab {
   z-index: 9 !important;
   border-radius: 0 !important;
   padding: 0 !important;
-}
-
-svg {
-  color: black;
 }/*# sourceMappingURL=style.css.map */

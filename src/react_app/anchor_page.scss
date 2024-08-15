@@ -64,7 +64,8 @@
     //     }
     // }
     >.nav-bar{
-        width: 15%;
+        flex: 0 1 250px;
+        min-width: 250px;
         background-color: $secondary;
         margin: 0;
         padding: 0;
@@ -191,7 +192,7 @@
         background-color: $primary;
         border-radius: 10px 10px 10px 10px;
         margin: 0px 10px 10px 0px;
-        &:last-of-type{
+        &:not(.nav-bar):last-of-type{
             margin: 10px 0;
             height: calc(100vh - 150px);
             @media (max-width: 768.68px) {

@@ -1,5 +1,7 @@
 
 import React, {useState , Component} from 'react';
+import Header_section from './header_section';
+import Breadcrumb_section from './breadcrumb_section';
 import { NavLink, Outlet } from 'react-router-dom';
 import homeicon from '../assets/house-blank.svg';
 import charticon from '../assets/chart-tree-map.svg';
@@ -18,10 +20,12 @@ fileicon={
     maskImage: `url(${fileicon})`,
   }
   render(){
-    return(
+    return(<>
+  <Header_section />
+  <Breadcrumb_section />
         <div className="anchor_section">
         <div className='nav-bar'>
-            <NavLink to="/" ><span className='span-icon' style={this.homeicon}></span><span>Home</span></NavLink>
+            <NavLink to="/home" ><span className='span-icon' style={this.homeicon}></span><span>Home</span></NavLink>
             <NavLink to="/grid" ><span className='span-icon'style={this.charticon}></span><span>Component</span></NavLink>
             <NavLink to="/contact"><span className='span-icon' style={this.fileicon}></span><span>Contact</span></NavLink>
             <NavLink to="/form"><span className='span-icon' style={this.fileicon}></span><span>Contact</span></NavLink>
@@ -30,7 +34,7 @@ fileicon={
 
       <Outlet />
         </div>
-
+        </>
 
     );
   }
