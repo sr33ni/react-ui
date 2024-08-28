@@ -15,7 +15,7 @@ const Breadcrumb_section = () => {
         )
     })
     return(
-        <div className="Breadcrumb">
+        <div className="breadcrumb">
            {crumbs}
         </div>
     )

@@ -222,6 +222,11 @@ body input:focus-visible {
   transition: all 0.9s;
 }
 
+.breadcrumb {
+  display: flex;
+  gap: 10px;
+}
+
 .header-section {
   background-color: #2B77A4;
   min-height: 80px;
