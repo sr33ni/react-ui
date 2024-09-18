@@ -29,7 +29,7 @@ fileicon={
             <NavLink to="/grid" ><span className='span-icon'style={this.charticon}></span><span>Component</span></NavLink>
             <NavLink to="/contact"><span className='span-icon' style={this.fileicon}></span><span>Contact</span></NavLink>
             <NavLink to="/form"><span className='span-icon' style={this.fileicon}></span><span>Contact</span></NavLink>
-            <NavLink to="/fg"><span className='span-icon' style={this.fileicon}></span><span>Contact</span></NavLink>
+            <NavLink to="/sample"><span className='span-icon' style={this.fileicon}></span><span>Sample page</span></NavLink>
       </div>
 
       <Outlet />

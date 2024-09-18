@@ -9,6 +9,7 @@ import Page_404 from './sub_page/page_404';
 import Info_page from './sub_page/info_page';
 import Faq_page from './sub_page/faq-page';
 import Login_page from './login_page';
+import Sample_page from './sample_page';
 class Anchor_page extends React.Component{
   constructor(props) {
     super(props);
@@ -32,6 +33,7 @@ class Anchor_page extends React.Component{
         <Route exact path="moreinfo" element={<Info_page />} /> 
         </Route> 
         <Route exact path="*" element={<Page_404 />} /> 
+        <Route exact path="/sample" element={<Sample_page />} /> 
         
                   
         </Route> 

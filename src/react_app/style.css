@@ -227,6 +227,14 @@ body input:focus-visible {
   gap: 10px;
 }
 
+.blog-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.blog-container .blog-card {
+  flex: 0 1 33.3333333333%;
+}
+
 .header-section {
   background-color: #2B77A4;
   min-height: 80px;
