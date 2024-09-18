@@ -167,6 +167,7 @@ body input:focus-visible {
 .anchor_section > div:not(.nav-bar):last-of-type {
   margin: 10px 0;
   height: calc(100vh - 150px);
+  overflow: auto;
 }
 @media (max-width: 768.68px) {
   .anchor_section > div:not(.nav-bar):last-of-type {

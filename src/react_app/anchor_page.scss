@@ -195,6 +195,7 @@
         &:not(.nav-bar):last-of-type{
             margin: 10px 0;
             height: calc(100vh - 150px);
+            overflow: auto;
             @media (max-width: 768.68px) {
             animation: active-tab-animation 0.9s;
             position: relative;
