@@ -1,11 +1,11 @@
 
 @use "sass:color";
-@import "./variable.scss";
-@import "./anchor_page.scss";
-@import "./sub_page/home_page.scss";
-@import "./sub_page/grid_page.scss";
-@import "./sub_page/header_section.scss";
-@import "./sub_page/detail_component.scss";
-@import "./sub_page/contact_page.scss";
-@import "./sub_page/css_carousel.scss";
-@import "./sub_page/page_404.scss";
+@import "./variable";
+@import "./anchor_page";
+@import "./sub_page/home_page";
+@import "./sub_page/grid_page";
+@import "./sub_page/header_section";
+@import "./sub_page/detail_component";
+@import "./sub_page/contact_page";
+@import "./sub_page/css_carousel";
+@import "./sub_page/page_404";

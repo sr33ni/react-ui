@@ -47,5 +47,18 @@
     "blogname" : "hey hey",
     "blogauthor": "hugo branch",
     "blogcontent" : "Lorem ipsum dolor sit amet, eam ne suavitate iudicabit patrioque. Nec agam alterum necessitatibus ne, sit eu tibique iracundia reformidans, ius tritani denique ex. Tantas oblique nominati et eum, impetus meliore consectetuer eam ne. No per quando "        
+},
+{
+    "id" :  8,
+    "blogname" : "27 Club",
+    "blogauthor": "Houdin",
+    "blogcontent" : "Lorem ipsum dolor sit amet, eam ne suavitate iudicabit patrioque. Nec agam alterum necessitatibus ne, sit eu tibique iracundia reformidans, ius tritani denique ex. Tantas oblique nominati et eum, impetus meliore consectetuer eam ne. No per quando "
+},
+{
+    "id" :  9,
+    "blogname" : "qwerty",
+    "blogauthor": "Houdin",
+    "blogcontent" : "Lorem ipsum dolor sit amet, eam ne suavitate iudicabit patrioque. Nec agam alterum necessitatibus ne, sit eu tibique iracundia reformidans, ius tritani denique ex. Tantas oblique nominati et eum, impetus meliore consectetuer eam ne. No per quando "
 }
-]}
+]
+}
