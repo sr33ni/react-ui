@@ -12,6 +12,10 @@ class Grid_page extends React.Component{
             <h1>Component</h1>
             <p>Welcome to Component page.</p>
             <Details_component />
+
+            <div className='name'>
+
+            </div>
         </div>
     );
   }
