@@ -9,8 +9,6 @@ const Sample_page = () => {
         alert("red");
          setColor(!color)
     }
-
-    
 //     const bands = [
 //         {
 //     "id" :  1,
@@ -74,7 +72,7 @@ const Sample_page = () => {
 
         </div>
         { blogs && <Blog_component  blogs={blogs} blog-delete={blogdelete} title="all Blogs"/>}
-        { blogs &&  <Blog_component blogs={blogs.filter(blog => blog.blogauthor == "Spencer" )} blog-delete={blogdelete} title="spencer Blogs"/>}
+        { blogs &&           <Blog_component blogs={blogs.filter(blog => blog.blogauthor == "Spencer" )} blog-delete={blogdelete} title="spencer Blogs"/>}
 
         </div>
 

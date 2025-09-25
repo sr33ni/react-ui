@@ -10,6 +10,7 @@ import Info_page from './sub_page/info_page';
 import Faq_page from './sub_page/faq-page';
 import Login_page from './login_page';
 import Sample_page from './sample_page';
+import Counter from './sub_page/Counter';
 class Anchor_page extends React.Component{
   constructor(props) {
     super(props);
@@ -34,6 +35,7 @@ class Anchor_page extends React.Component{
         </Route> 
         <Route exact path="*" element={<Page_404 />} /> 
         <Route exact path="/sample" element={<Sample_page />} /> 
+        <Route exact path="/Counter" element={<Counter/>} /> 
         
                   
         </Route> 

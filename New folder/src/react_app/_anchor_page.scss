@@ -296,30 +296,3 @@
 }
 
 // sample page - end
-
-.login-section{
-    height: 100vh;
-    align-content: center;
-    justify-items: center;
-    > section{
-        background-color: $secondary;
-        color: $primary;
-        padding: 50px;
-        > form{
-            > div{
-                position: relative;
-            }
-            input{
-                font-size: 1.2rem;
-                border-radius: 1.25em;
-                padding: 5px 10px;
-                margin-bottom: 20px;
-                ~ .error-span{
-                    position: absolute;
-                    left: 0;
-                    bottom: 0;
-                }
-            }
-        }
-    }
-}

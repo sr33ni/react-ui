@@ -1,0 +1,50 @@
+.header-section{
+    background-color: $secondary;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    .logo-container{
+        display: flex;
+        gap: 15px;
+        align-items: center;
+        width: 20%;
+        justify-content: center;
+        @media (max-width: 768.68px) {
+            width: fit-content;
+            }
+    .img-container{
+        width: 40px;
+        height: 40px;
+        background-color: $primary;
+        padding: 10px;
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+            img{
+                max-width: 100%;
+            }
+        }
+        .logo-name{
+            font-size: 24px;
+            color: $primary;
+        }
+    }
+    .search-container{
+        margin-left: auto;
+        width: 30%;
+        position: relative;
+        input{
+            height: 40px;
+            width: 90%;
+            border-radius: 100vw;
+            padding: 0 20px;
+            border: 0;
+            background-size: 25px;
+            background-repeat: no-repeat;
+            padding-left: 43px;
+            background-position: 3% 50%;
+            font-size: $fnt-sz-16px;
+        }
+    }
+}
