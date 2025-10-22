@@ -11,6 +11,9 @@ import Faq_page from './sub_page/faq-page';
 import Login_page from './login_page';
 import Sample_page from './sample_page';
 import Counter from './sub_page/Counter';
+import ProtectedRoute from './components/ProtectedRouter.jsx';
+
+
 class Anchor_page extends React.Component{
   constructor(props) {
     super(props);
@@ -25,20 +28,18 @@ class Anchor_page extends React.Component{
       createRoutesFromElements(
         <Route>
           <Route exact path="login" element={<Login_page />} /> 
-        <Route path='/' element={<Main_nav />}>
-
-        <Route exact path="/home" element={<Home_page />} />
-        <Route exact path="/grid" element={<Grid_page />} />
-        <Route exact path="contact" element={<Contact_page />}> 
-        <Route exact path="faq" element={<Faq_page />} /> 
-        <Route exact path="moreinfo" element={<Info_page />} /> 
-        </Route> 
-        <Route exact path="*" element={<Page_404 />} /> 
-        <Route exact path="/sample" element={<Sample_page />} /> 
-        <Route exact path="/Counter" element={<Counter/>} /> 
-        
-                  
-        </Route> 
+            <Route path='/' element={<><Main_nav /><ProtectedRoute /></>}>
+            <Route exact path="/home" element={<Home_page />} />
+            <Route exact path="/grid" element={<Grid_page />} />
+            <Route exact path="contact" element={<Contact_page />}/> 
+            <Route exact path="faq" element={<Faq_page />} /> 
+            <Route exact path="moreinfo" element={<Info_page />} /> 
+            <Route exact path="*" element={<Page_404 />} /> 
+            <Route exact path="/sample" element={<Sample_page />} /> 
+            <Route exact path="/Counter" element={<Counter/>} /> 
+          
+                    
+          </Route> 
         </Route>
       )
     )
