@@ -30,6 +30,7 @@ fileicon={
             <NavLink to="/contact"><span className='span-icon' style={this.fileicon}></span><span>Contact</span></NavLink>
             <NavLink to="/form"><span className='span-icon' style={this.fileicon}></span><span>Contact</span></NavLink>
             <NavLink to="/sample"><span className='span-icon' style={this.fileicon}></span><span>Sample page</span></NavLink>
+             <NavLink to="/chakraui"><span className='span-icon' style={this.fileicon}></span><span>ChakraUI</span></NavLink>
       </div>
 
       <Outlet />

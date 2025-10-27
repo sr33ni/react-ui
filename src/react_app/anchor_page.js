@@ -12,6 +12,7 @@ import Login_page from './login_page';
 import Sample_page from './sample_page';
 import Counter from './sub_page/Counter';
 import ProtectedRoute from './components/ProtectedRouter.jsx';
+import ChakraUI from './sub_page/ChakraUI.js';
 
 
 class Anchor_page extends React.Component{
@@ -37,7 +38,7 @@ class Anchor_page extends React.Component{
             <Route exact path="*" element={<Page_404 />} /> 
             <Route exact path="/sample" element={<Sample_page />} /> 
             <Route exact path="/Counter" element={<Counter/>} /> 
-          
+            <Route exact path="/ChakraUI" element={<ChakraUI/>} /> 
                     
           </Route> 
         </Route>
