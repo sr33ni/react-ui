@@ -192,7 +192,10 @@
         background-color: $primary;
         border-radius: 10px 10px 10px 10px;
         margin: 0px 10px 10px 0px;
-        &:not(.nav-bar):last-of-type{
+        &:not([class*="css-"]){
+            color: $secondary;
+        }
+        &:not(.nav-bar,[class*="css-"]):last-of-type{
             margin: 10px 0;
             height: calc(100vh - 150px);
             overflow: auto;

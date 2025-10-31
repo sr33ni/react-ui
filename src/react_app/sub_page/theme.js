@@ -1,4 +1,4 @@
-import { extendTheme } from '@chakra-ui/react';
+import { Container, extendTheme } from '@chakra-ui/react';
 
 // ✅ 1. Global Settings (light/dark mode)
 const config = {
@@ -67,25 +67,58 @@ const components = {
     },
     variants: {
       solid: (props) => ({
-        bg: props.colorMode === 'dark' ? 'brand.400' : 'brand.500',
-        color: 'white',
+        bg: props.colorMode === 'dark' ? 'brand.200' : 'brand.500',
+        color: props.colorMode === 'dark' ? 'brand.200' : 'brand.500',
         _hover: {
-          bg: props.colorMode === 'dark' ? 'brand.300' : 'brand.600',
+          bg: props.colorMode === 'dark' ? 'brand.400' : 'brand.600',
         },
       }),
       outline: {
-        borderColor: 'brand.500',
-        color: 'brand.500',
+        borderColor: 'brand.800',
+        color: 'brand.800',
       },
+      outlined: (props) => ({
+        bg: props.colorMode === 'dark' ? 'brand.100' : 'brand.600',
+        color: 'brand.800',
+        _hover: {
+          bg: props.colorMode === 'dark' ? 'brand.100' : 'brand.100',
+        },
+      }),
     },
-  },
 
+  },
+  BlockBox: {
+    baseStyle: (props) => ({
+      padding: '16px',
+      borderRadius: '12px',
+      boxShadow: 'md',
+      // bg: props.colorMode === 'dark' ? 'brand.800' : 'brand.100',
+      bg: 'red'
+    }),
+  },
   Card: {
     baseStyle: {
       padding: '20px',
       borderRadius: '16px',
       boxShadow: 'xl',
     },
+  },
+  Container: {
+    baseStyle: {
+      padding: '20px',
+      borderRadius: '16px',
+
+    },
+          sizes: {
+        sm: { maxW: "container.sm" },
+        md: { maxW: "container.md" },
+        lg: { maxW: "container.lg" },
+        xl: { maxW: "container.xl" },
+        100: { maxW: "100%" },
+      },
+      defaultProps: {
+        size: "lg",
+      },
   },
 };
 

@@ -164,13 +164,16 @@ body input:focus-visible {
   border-radius: 10px 10px 10px 10px;
   margin: 0px 10px 10px 0px;
 }
-.anchor_section > div:not(.nav-bar):last-of-type {
+.anchor_section > div:not([class*=css-]) {
+  color: #2B77A4;
+}
+.anchor_section > div:not(.nav-bar, [class*=css-]):last-of-type {
   margin: 10px 0;
   height: calc(100vh - 150px);
   overflow: auto;
 }
 @media (max-width: 768.68px) {
-  .anchor_section > div:not(.nav-bar):last-of-type {
+  .anchor_section > div:not(.nav-bar, [class*=css-]):last-of-type {
     animation: active-tab-animation 0.9s;
     position: relative;
     z-index: 1;
@@ -270,8 +273,7 @@ body input:focus-visible {
 
 .name {
   height: 100vh;
-  -webkit-clip-path: polygon(0% 9.25%, 17.65% 9.25%, 17.65% 0%, 100% 0%, 100% 89.82%, 80.56% 89.82%, 80.56% 100%, 0% 100%);
-          clip-path: polygon(0% 9.25%, 17.65% 9.25%, 17.65% 0%, 100% 0%, 100% 89.82%, 80.56% 89.82%, 80.56% 100%, 0% 100%);
+  clip-path: polygon(0% 9.25%, 17.65% 9.25%, 17.65% 0%, 100% 0%, 100% 89.82%, 80.56% 89.82%, 80.56% 100%, 0% 100%);
   background-color: #000000;
 }
 
