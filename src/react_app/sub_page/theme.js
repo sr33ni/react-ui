@@ -92,8 +92,10 @@ const components = {
       padding: '16px',
       borderRadius: '12px',
       boxShadow: 'md',
-      // bg: props.colorMode === 'dark' ? 'brand.800' : 'brand.100',
-      bg: 'red'
+      bg: props.colorMode === 'dark' ? 'brand.800' : 'brand.100',
+      innerHeight: '',
+      color: props.colorMode === 'dark' ? 'brand.100' : 'brand.800',
+      margin: '10px 0' 
     }),
   },
   Card: {
