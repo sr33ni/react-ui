@@ -1,64 +1,76 @@
-
-{"blogs-data":[
 {
-    "id" :  1,
-    "blogname" : "red paint",
-    "blogauthor": "kool aid",
-    "blogcontent" : "Lorem ipsum dolor sit amet, eam ne suavitate iudicabit patrioque. Nec agam alterum necessitatibus ne, sit eu tibique iracundia reformidans, ius tritani denique ex. Tantas oblique nominati et eum, impetus meliore consectetuer eam ne. No per quando "
-},
-{
-    "id":  2,
-    "blogname" : "Startdust",
-    "blogauthor": "Spencer",
-    "blogcontent" : "Lorem ipsum dolor sit amet, eam ne suavitate iudicabit patrioque. Nec agam alterum necessitatibus ne, sit eu tibique iracundia reformidans, ius tritani denique ex. Tantas oblique nominati et eum, impetus meliore consectetuer eam ne. No per quando "
-
-},
-{
-    "id" :  3,
-    "blogname" : "killer croc",
-    "blogauthor": "Spencer",
-    "blogcontent" : "Lorem ipsum dolor sit amet, eam ne suavitate iudicabit patrioque. Nec agam alterum necessitatibus ne, sit eu tibique iracundia reformidans, ius tritani denique ex. Tantas oblique nominati et eum, impetus meliore consectetuer eam ne. No per quando "
-
-},        
-{
-    "id" :  4,
-    "blogname" : "magic men",
-    "blogauthor": "Spencer",
-    "blogcontent" : "Lorem ipsum dolor sit amet, eam ne suavitate iudicabit patrioque. Nec agam alterum necessitatibus ne, sit eu tibique iracundia reformidans, ius tritani denique ex. Tantas oblique nominati et eum, impetus meliore consectetuer eam ne. No per quando "
-
-            
-},        
-{
-    "id" :  5,
-    "blogname" : "dump dream",
-    "blogauthor": "Spencer",
-    "blogcontent" : "Lorem ipsum dolor sit amet, eam ne suavitate iudicabit patrioque. Nec agam alterum necessitatibus ne, sit eu tibique iracundia reformidans, ius tritani denique ex. Tantas oblique nominati et eum, impetus meliore consectetuer eam ne. No per quando "        
-}
-,        
-{
-    "id" :  6,
-    "blogname" : "last life",
-    "blogauthor": "kool aid",
-    "blogcontent" : "Lorem ipsum dolor sit amet, eam ne suavitate iudicabit patrioque. Nec agam alterum necessitatibus ne, sit eu tibique iracundia reformidans, ius tritani denique ex. Tantas oblique nominati et eum, impetus meliore consectetuer eam ne. No per quando "        
-}
-,        
-{
-    "id" :  7,
-    "blogname" : "hey hey",
-    "blogauthor": "hugo branch",
-    "blogcontent" : "Lorem ipsum dolor sit amet, eam ne suavitate iudicabit patrioque. Nec agam alterum necessitatibus ne, sit eu tibique iracundia reformidans, ius tritani denique ex. Tantas oblique nominati et eum, impetus meliore consectetuer eam ne. No per quando "        
-},
-{
-    "id" :  8,
-    "blogname" : "27 Club",
-    "blogauthor": "Houdin",
-    "blogcontent" : "Lorem ipsum dolor sit amet, eam ne suavitate iudicabit patrioque. Nec agam alterum necessitatibus ne, sit eu tibique iracundia reformidans, ius tritani denique ex. Tantas oblique nominati et eum, impetus meliore consectetuer eam ne. No per quando "
-},
-{
-    "id" :  9,
-    "blogname" : "qwerty",
-    "blogauthor": "Houdin",
-    "blogcontent" : "Lorem ipsum dolor sit amet, eam ne suavitate iudicabit patrioque. Nec agam alterum necessitatibus ne, sit eu tibique iracundia reformidans, ius tritani denique ex. Tantas oblique nominati et eum, impetus meliore consectetuer eam ne. No per quando "
-}
-]
+  "blogs-data": [
+    {
+      "id": 1,
+      "blogname": "red paint",
+      "blogauthor": "kool aid",
+      "blogcontent": "Red paint is often associated with passion, danger, love, and power. In art and design, it is used to grab attention, evoke strong emotion, and create bold visual impact. From ancient cave drawings to modern street art, red has always been a dominant and expressive color."
+    },
+    {
+      "id": 2,
+      "blogname": "Startdust",
+      "blogauthor": "Spencer",
+      "blogcontent": "Stardust is a term used to describe the tiny particles left over from the formation of stars. Every atom in the human body was once part of a star, meaning we are, in a very real sense, made of stardust. It symbolizes cosmic connection and the mystery of the universe."
+    },
+    {
+      "id": 3,
+      "blogname": "killer croc",
+      "blogauthor": "Spencer",
+      "blogcontent": "Killer Croc is a fictional supervillain from the DC Comics universe, often portrayed as a humanoid crocodile with immense strength and a tragic backstory. He is known for his conflicts with Batman and his struggle between his humanity and monstrous nature."
+    },
+    {
+      "id": 4,
+      "blogname": "magic men",
+      "blogauthor": "Spencer",
+      "blogcontent": "Magic men are often seen as mysterious figures who harness supernatural powers or illusion-based skills. From ancient sorcerers and wizards to modern stage magicians, they represent humanity’s fascination with the unknown and the impossible."
+    },
+    {
+      "id": 5,
+      "blogname": "dump dream",
+      "blogauthor": "Spencer",
+      "blogcontent": "A dump dream usually reflects feelings of self-doubt, cluttered thoughts, or the need to let go of emotional baggage. It can symbolize mental overwhelm or a subconscious desire to clear away things that no longer serve a purpose."
+    },
+    {
+      "id": 6,
+      "blogname": "last life",
+      "blogauthor": "kool aid",
+      "blogcontent": "The concept of a last life explores ideas around mortality, reincarnation, and the meaning of existence. It asks deep philosophical questions about whether this life is final or just one step in a larger spiritual journey."
+    },
+    {
+      "id": 7,
+      "blogname": "hey hey",
+      "blogauthor": "hugo branch",
+      "blogcontent": "‘Hey Hey’ represents a moment of connection and casual interaction. It reflects everyday human communication and the small but meaningful ways people reach out to each other in both physical and digital spaces."
+    },
+    {
+      "id": 8,
+      "blogname": "27 Club",
+      "blogauthor": "Houdin",
+      "blogcontent": "The 27 Club is an informal term used to refer to several famous musicians and artists who died at the age of 27, often due to drug or alcohol abuse, mental health struggles, or suicide. Some of the most well-known members include Jimi Hendrix, Janis Joplin, Jim Morrison, Kurt Cobain, and Amy Winehouse. The pattern has become a cultural myth in music history, symbolizing the dark side of fame and creative pressure."
+    },
+    {
+      "id": 9,
+      "blogname": "qwerty",
+      "blogauthor": "Houdin",
+      "blogcontent": "QWERTY is the standard keyboard layout used across most computers and devices today. It was designed in the 19th century to prevent mechanical typewriter jams and has remained the dominant layout even in the digital age."
+    },
+    {
+      "id": 10,
+      "blogname": "Nirvana",
+      "blogauthor": "kool aid",
+      "blogcontent": "Nirvana was an American rock band formed in Aberdeen, Washington, in 1987. The band consisted of Kurt Cobain, Krist Novoselic, and Dave Grohl. They became a central part of the grunge movement and achieved worldwide success with the release of their 1991 album 'Nevermind,' which featured the iconic single 'Smells Like Teen Spirit.' Nirvana’s raw sound and emotionally intense lyrics left a lasting impact on rock music and popular culture before the band ended following Cobain’s death in 1994."
+    },
+    {
+      "id": 11,
+      "blogname": "Dark Side of the Moon",
+      "blogauthor": "Pink",
+      "blogcontent": "The Dark Side of the Moon is a legendary 1973 album by Pink Floyd that explores themes such as time, mental health, conflict, greed, and the pressures of modern life. Known for its seamless transitions, experimental sound design, and iconic prism cover, the album became one of the best-selling records of all time and a defining work in progressive rock history."
+    },
+    {
+      "id": 12,
+      "blogname": "Dunning–Kruger",
+      "blogauthor": "Spencer",
+      "blogcontent": "The Dunning–Kruger effect is a cognitive bias where people with low ability or knowledge in a subject tend to overestimate their competence. At the same time, people who are highly skilled often underestimate how capable they really are. It highlights the importance of self-awareness, learning, and constructive feedback for personal growth."
+    }
+  ]
 }
