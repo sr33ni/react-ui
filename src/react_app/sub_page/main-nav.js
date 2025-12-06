@@ -28,7 +28,7 @@ fileicon={
             <NavLink to="/home" ><span className='span-icon' style={this.homeicon}></span><span>Home</span></NavLink>
             <NavLink to="/grid" ><span className='span-icon'style={this.charticon}></span><span>Component</span></NavLink>
             <NavLink to="/contact"><span className='span-icon' style={this.fileicon}></span><span>Contact</span></NavLink>
-            <NavLink to="/form"><span className='span-icon' style={this.fileicon}></span><span>Contact</span></NavLink>
+            <NavLink to="/form"><span className='span-icon' style={this.fileicon}></span><span>page 404</span></NavLink>
             <NavLink to="/sample"><span className='span-icon' style={this.fileicon}></span><span>Sample page</span></NavLink>
              <NavLink to="/chakraui"><span className='span-icon' style={this.fileicon}></span><span>ChakraUI</span></NavLink>
       </div>
