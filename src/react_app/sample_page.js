@@ -2,12 +2,12 @@ import React, { useEffect, useState } from "react"
 import Blog_component from "./blog_component"
 
 const Sample_page = () => {
-     const [color, setColor] = useState("null")
+    const [color, setColor] = useState(false)
 
-     const [blogs, setBlogs] = useState(null);
-     const onclickhandle = () => {
-        alert("red");
-         setColor(!color)
+    const [blogs, setBlogs] = useState(null);
+    const onclickhandle = () => {
+       alert("red");
+        setColor(prev => !prev)
     }
 
     
@@ -28,25 +28,22 @@ const Sample_page = () => {
         
 //          ]
 //      const [filter, setfilter] = useState("null")
-    useEffect(
-        () => {
-            fetch('https://react-ui-three-teal.vercel.app/blogs-data')
-            .then(res => {
-                return res.json();
-            })
+    useEffect(() => {
+            fetch('/sample_page.json')
+            .then(res => res.json())
             .then(data => {
-                setBlogs(data)
-                console.log("koo");
+                setBlogs(data['blogs-data'])
+                console.log('loaded blogs');
             })
-        },[]
-    )
+            .catch(err => console.error('Failed to load sample_page.json', err));
+        },[])
     let blogdelete = (id) =>{
         const newBlog = blogs.filter(blog => blog.id !== id);
         setBlogs(newBlog);
     }
     return(
         <div>
-                <div lassName="login-container">
+            <div className="login-container">
             <h1> hello {color ? "red" : "noon"}man</h1>
             <h1> hello {color ? "red" : "noon"}man</h1>
             <button onClick={() => {onclickhandle()}} className={(color ? "jkl" : "red")}>sss</button>
@@ -73,8 +70,8 @@ const Sample_page = () => {
 
 
         </div>
-        { blogs && <Blog_component  blogs={blogs} blog-delete={blogdelete} title="all Blogs"/>}
-        { blogs &&  <Blog_component blogs={blogs.filter(blog => blog.blogauthor == "Spencer" )} blog-delete={blogdelete} title="spencer Blogs"/>}
+        { blogs && <Blog_component  blogs={blogs} blogdelete={blogdelete} title="all Blogs"/>}
+        { blogs &&  <Blog_component blogs={blogs.filter(blog => blog.blogauthor === "Spencer" )} blogdelete={blogdelete} title="spencer Blogs"/>}
 
         </div>
 
