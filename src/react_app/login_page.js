@@ -29,7 +29,7 @@ const Login_page = () => {
                     <div>
                         <input
                             type="text"
-                            placeholder="Username"
+                            placeholder="admin"
                             value={username}
                             onChange={(e) => setUsername(e.target.value)}
                             required
@@ -39,7 +39,7 @@ const Login_page = () => {
                     <div>
                         <input id="password"
                             type="password"
-                            placeholder="Password"
+                            placeholder="12345"
                             value={password}
                             onChange={(e) => setPassword(e.target.value)}
                             required
