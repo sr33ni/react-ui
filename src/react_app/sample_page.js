@@ -30,7 +30,7 @@ const Sample_page = () => {
 //      const [filter, setfilter] = useState("null")
     useEffect(
         () => {
-            fetch('http://localhost:8000/blogs-data')
+            fetch('https://react-ui-three-teal.vercel.app/blogs-data')
             .then(res => {
                 return res.json();
             })
