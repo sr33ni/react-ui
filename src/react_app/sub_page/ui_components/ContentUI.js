@@ -9,9 +9,9 @@ function ContentUI() {
            <Button size={"lg"} variant="outlined" onClick={toggleColorMode}>Click Me</Button>
         <Heading mb={4} >v2</Heading>
         <Button size={"lg"} variant="outlined">Click Me</Button>
-        <Card mt={4}>
+        <BlockBox>
           This is a card component with custom styles.
-        </Card>
+        </BlockBox>
       </Container>
     </div>
   );
